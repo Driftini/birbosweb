@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Motorola Screentype";
-    src: url(MotorolaScreentype.ttf) format(ttf);
+    src: url(MotorolaScreentype.ttf);
 }/**/
 
 @font-face {
     font-family: "Nokia Cellphone FC";
-    src: url(nokiafc22.ttf) format(ttf);
+    src: url(nokiafc22.ttf);
 }
 
 body {
@@ -14,10 +14,11 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     font-family: "Nokia Cellphone FC", sans-serif;
     font-size: 18px;
     color: white;
+    margin-top: 50px;
     font-smooth: never;
     -webkit-font-smoothing: none;
     -moz-osx-font-smoothing: grayscale;
@@ -25,5 +26,47 @@ body {
 
 .header {
     font-family: "Motorola Screentype", sans-serif;
-    font-size: 30px;
+    font-size: 90px;
+}
+
+.topheader {
+    position: relative;
+    animation-name: headerFadeIn;
+    animation-duration: 2s;
+    animation-delay: 0.2s;
+    animation-timing-function: cubic-bezier(.32,.28,.35,.95);
+    animation-fill-mode: both;
+}
+
+.headercontainer {
+    min-height: 90px;
+    display: flex;
+    justify-content: center;
+}
+
+.headercontainer * {
+    margin: 0;
+}
+
+@keyframes headerFadeIn {
+    0% {
+        opacity: 0;
+        bottom: 35px;
+    }
+    100% {
+        opacity: 1;
+        bottom: 0;
+    }
+}
+
+.right {
+    justify-content: right;
+}
+
+.left {
+    justify-content: left;
+}
+
+.row {
+    flex-direction: row;
 }
