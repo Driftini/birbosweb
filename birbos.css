@@ -15,10 +15,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     font-family: "Nokia Cellphone FC", sans-serif;
     font-size: 18px;
     color: white;
-    margin-top: 50px;
+    margin: 0;
+    margin-top: 75px;
     font-smooth: never;
     -webkit-font-smoothing: none;
     -moz-osx-font-smoothing: grayscale;
@@ -27,6 +29,7 @@ body {
 .header {
     font-family: "Motorola Screentype", sans-serif;
     font-size: 90px;
+    text-align: center;
 }
 
 .topheader {
@@ -48,6 +51,40 @@ body {
     margin: 0;
 }
 
+header#menubar {
+    width: 100%;
+    height: 64px;
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    user-select: none;
+    flex-direction: row;
+    box-shadow: 0 0 10px 0 #000;
+    z-index: 1;
+}
+
+.menugroup {
+    max-height: 100%;
+    padding: 0px 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+#menubar .header {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#menubar .tm {
+    font-size: 10px;
+    align-self: flex-start;
+}
+
 @keyframes headerFadeIn {
     0% {
         opacity: 0;
@@ -61,10 +98,12 @@ body {
 
 .right {
     justify-content: right;
+    text-align: right;
 }
 
 .left {
     justify-content: left;
+    text-align: left;
 }
 
 .row {
