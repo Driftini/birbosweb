@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "Motorola Screentype";
+    src: url(MotorolaScreentype.ttf) format(ttf);
+}/**/
+
+@font-face {
+    font-family: "Nokia Cellphone FC";
+    src: url(nokiafc22.ttf) format(ttf);
+}
+
+body {
+    background-image: linear-gradient(0,#000,#333);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Nokia Cellphone FC", sans-serif;
+    font-size: 18px;
+    color: white;
+    font-smooth: never;
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.header {
+    font-family: "Motorola Screentype", sans-serif;
+    font-size: 30px;
+}
